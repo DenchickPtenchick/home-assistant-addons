@@ -1,0 +1,20 @@
+{
+  "name": "Simple Neural Service",
+  "version": "1.0.0",
+  "slug": "simple_neural_service",
+  "description": "Run TFLite model as local API",
+  "startup": "application",
+  "boot": "auto",
+  "host_network": true,
+  "homeassistant": "2024.4.0",
+  "arch": ["aarch64"],
+  "options": {},
+  "schema": {},
+  "ports": {
+    "5000/tcp": 5000
+  },
+  "build": {
+    "type": "docker",
+    "dockerfile": "Dockerfile"
+  }
+}
